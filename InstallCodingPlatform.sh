@@ -17,7 +17,7 @@ sudo apt -y install git
 # Install GitKraken
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 sudo dpkg -i gitkraken-amd64.deb
-sudo apt --fix-borken -y install
+sudo apt --fix-broken -y install
 
 echo "DOTNET_CLI_TELEMETRY_OPTOUT=1" | sudo tee -a /etc/environment
 
