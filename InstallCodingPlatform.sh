@@ -1,7 +1,20 @@
-#!/bin/bash
+c#!/bin/bash
+
+# Get Linux Version
+
+lsbFile="/etc/lsb-release"
+releaseName="DISTRIB_RELEASE="
+
+while IFS= read -r line
+do
+  if [[ $line == $releaseName* ]]
+  then
+    releaseVersion=${line:16}
+  fi
+done < $lsbFile
 
 # Install DotNet Core
-wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+wget -q https://packages.microsoft.com/config/ubuntu/${releaseVersion}/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo add-apt-repository universe
 sudo apt -y install apt-transport-https
@@ -9,6 +22,7 @@ sudo apt update
 sudo apt -y install dotnet-sdk-2.2
 
 # Install VS Code
+sudo apt install snapd
 sudo snap install code --classic
 echo "DOTNET_CLI_TELEMETRY_OPTOUT=1" | sudo tee -a /etc/environment
 
@@ -23,3 +37,4 @@ sudo apt --fix-broken -y install
 # Install NodeJs
 sudo apt -y install nodejs
 sudo apt -y install npm
+sudo apt -y install yarn
