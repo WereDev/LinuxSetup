@@ -1,0 +1,13 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Noctis",
+    "terminal.integrated.fontSize": 16,
+    "terminal.explorerKind": "external",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "omnisharp.enableRoslynAnalyzers": true,
+    "csharp.suppressDotnetRestoreNotification": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
