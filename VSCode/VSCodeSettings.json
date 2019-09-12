@@ -21,5 +21,8 @@
         "!Not",
         "!Ref",
         "!Sub"
-    ]
+    ],
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    }
 }
