@@ -29,10 +29,9 @@ echo "DOTNET_CLI_TELEMETRY_OPTOUT=1" | sudo tee -a /etc/environment
 # Install Git
 sudo apt -y install git
 
-# Install GitKraken
-wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-sudo dpkg -i gitkraken-amd64.deb
-sudo apt --fix-broken -y install
+# Install SmartGit
+wget https://www.syntevo.com/downloads/smartgit/smartgit-19_1_4.deb
+sudo dpkg -g smartgit-19_1_4.deb
 
 # Install NodeJs
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
