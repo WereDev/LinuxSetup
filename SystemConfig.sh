@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Gnome Tweaks
+sudo apt install -y gnome-tweaks
+
 # Enabling multi-finger gestures
 # Assumes libinput
 sudo gpasswd -a $USER input
