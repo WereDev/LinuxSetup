@@ -1,4 +1,4 @@
-c#!/bin/bash
+#!/bin/bash
 
 # Get Linux Version
 
