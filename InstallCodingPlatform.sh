@@ -18,7 +18,7 @@ sudo apt -y install git
 
 # Install SmartGit
 wget https://www.syntevo.com/downloads/smartgit/smartgit-19_1_4.deb
-sudo dpkg -g smartgit-19_1_4.deb
+sudo dpkg -i smartgit-19_1_4.deb
 
 # Install NodeJs
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
