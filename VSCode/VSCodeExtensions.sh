@@ -9,5 +9,4 @@ code --install-extension formulahendry.dotnet-test-explorer
 code --install-extension liviuschera.noctis
 code --install-extension ms-vscode.csharp
 code --install-extension ms-vscode.vs-keybindings
-code --install-extension PKief.material-icon-theme
 code --install-extension VisualStudioExptTeam.vscodeintellicode
