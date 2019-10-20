@@ -21,9 +21,9 @@ wget https://www.syntevo.com/downloads/smartgit/smartgit-19_1_4.deb
 sudo dpkg -i smartgit-19_1_4.deb
 
 # Install NodeJs
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo snap install node --classic --channel=10
+
+# Install Yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update
-sudo apt -y install nodejs
 sudo apt -y install yarn
