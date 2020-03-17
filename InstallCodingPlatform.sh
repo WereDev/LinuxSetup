@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Install DotNet Core
-wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb
+UBUNTU_VERSION=$(lsb_release -r -s)
+wget -q https://packages.microsoft.com/config/ubuntu/$UBUNTU_VERSION/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo add-apt-repository universe
 sudo apt -y install apt-transport-https
