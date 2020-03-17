@@ -5,16 +5,14 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "csharp.suppressDotnetRestoreNotification": true,
     "editor.suggestSelection": "first",
-    "omnisharp.enableRoslynAnalyzers": true,
     "terminal.explorerKind": "external",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.colorTheme": "Noctis",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vscode-great-icons",
     "yaml.customTags": [
         "!Equals",
         "!GetAtt",
@@ -24,5 +22,17 @@
     ],
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
-    }
+    },
+    "git.autofetch": true,
+    "razor.devmode": false,
+    "razor.trace": "Messages",
+    "telemetry.enableTelemetry": false,
+    "dotnet-test-explorer.enableTelemetry": false,
+    "[aspnetcorerazor]": {
+        
+    },
+    "omnisharp.enableRoslynAnalyzers": true,
+    "vsintellicode.java.completionsEnabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDelete": false
 }
