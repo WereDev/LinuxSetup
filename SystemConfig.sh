@@ -1,7 +1,17 @@
 #!/bin/bash
 
-# Gnome Tweaks
+# Gnome Tweaks and Extensions
 sudo apt install -y gnome-tweaks
+sudo apt install -y gnome-shell-extensions
+sudo apt install -y chrome-gnome-shell
+
+#Top Tray Icons
+cd ~/.local/share/gnome-shell/extensions
+wget https://extensions.gnome.org/extension-data/TopIcons-gitphocean.net.v2.shell-extension.zip
+unzip ./TopIcons-gitphocean.net.v2.shell-extension.zip -d ./TopIcons-git@phocean.net
+rm TopIcons-gitphocean.net.v2.shell-extension.zip
+cd ~
+
 
 # Enabling multi-finger gestures
 # Assumes libinput
