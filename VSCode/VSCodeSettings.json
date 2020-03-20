@@ -34,5 +34,6 @@
     "omnisharp.enableRoslynAnalyzers": true,
     "vsintellicode.java.completionsEnabled": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'",
 }
