@@ -12,6 +12,9 @@ unzip ./TopIcons-gitphocean.net.v2.shell-extension.zip -d ./TopIcons-git@phocean
 rm TopIcons-gitphocean.net.v2.shell-extension.zip
 cd ~
 
+# Gnome Settings
+dconf load / < gnome-settings.bak
+
 # Power Management
 # https://tipsonubuntu.com/2018/11/18/quick-tip-improve-battery-life-ubuntu-18-04-higher/
 sudo apt -y install tlp
