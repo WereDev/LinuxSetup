@@ -1,0 +1,12 @@
+[org/gnome/desktop/wm/keybindings]
+close=['<Alt>F4']
+switch-applications=@as []
+switch-applications-backward=@as []
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+home=['<Super>e']
