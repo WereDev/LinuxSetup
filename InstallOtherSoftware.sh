@@ -1,9 +1,16 @@
 #!/bin/bash
-cd ~/Downloads
 
-# Vivaldi
-echo "echo deb http://repo.vivaldi.com/stable/deb/ stable main > /etc/apt/sources.list.d/vivaldi.list" | sudo sh
-curl http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551
-sudo apt-get update
-sudo apt-get install -y vivaldi-stable
+# Making sure we have all the supporting bits
+sudo apt install -y software-properties-common apt-transport-https wget flatpak
+
+# Sublime
+flatpak install -y flathub com.sublimetext.three
+
+# Gimp
+flatpak install -y flathub org.gimp.GIMP
+
+# Inkscape
+flatpak install -y flathub org.inkscape.Inkscape
+
+# Master PDF
+flatpak install -y flathub net.codeindustry.MasterPDFEditor

@@ -1,0 +1,21 @@
+[org/gnome/desktop/wm/keybindings]
+close=['<Alt>F4']
+switch-applications=@as []
+switch-applications-backward=@as []
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+home=['<Super>e']
+
+[org/gnome/desktop/peripherals/touchpad]
+natural-scroll=true
+
+[org/gnome/shell]
+enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'batteryiconfix@kylecorry31.github.io', 'desktop-icons@csoriano', 'donotdisturb@kylecorry31.github.io', 'pop-shop-details@system76.com', 'pop-suspend-button@system76.com', 'system76-power@system76.com', 'TopIcons-git@phocean.net']
+
+[org/gnome/shell/extensions/topicons]
+tray-pos='right'
