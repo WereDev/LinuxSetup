@@ -6,10 +6,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.suggestSelection": "first",
-    "terminal.explorerKind": "external",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.fontSize": 12,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.colorTheme": "Noctis",
     "workbench.iconTheme": "vscode-great-icons",
@@ -35,5 +34,4 @@
     "vsintellicode.java.completionsEnabled": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDelete": false,
-    "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'",
 }
