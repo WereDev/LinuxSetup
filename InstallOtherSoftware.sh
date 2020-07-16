@@ -2,6 +2,7 @@
 
 # Making sure we have all the supporting bits
 sudo apt install -y software-properties-common apt-transport-https wget flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Sublime
 flatpak install -y flathub com.sublimetext.three
