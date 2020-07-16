@@ -25,7 +25,10 @@ chmod +x $setupFolder/VSCode/VSCodeExtensions.sh
 sudo apt -y install git
 
 # Install NodeJs
-sudo snap install node --classic
+wget --quiet -O - https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
 # Install BeeKeeper
-sudo snap install beekeeper-studio
+wget --quiet -O - https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
+echo "deb https://dl.bintray.com/beekeeper-studio/releases disco main" | sudo tee /etc/apt/sources.list.d/beekeeper-studio.list
+sudo apt update
+sudo apt install beekeeper-studio
