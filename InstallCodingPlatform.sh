@@ -18,7 +18,7 @@ sudo dpkg -i vscode.deb
 rm vscode.deb
 echo fs.inotify.max_user_instances=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-chmod +x $setupFolder/VSCode/VSCodeExtensions.sh
+chmod +x ./VSCode/VSCodeExtensions.sh
 ./VSCode/VSCodeExtensions.sh
 
 # Install Git
@@ -27,8 +27,5 @@ sudo apt -y install git
 # Install NodeJs
 wget --quiet -O - https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
-# Install BeeKeeper
-wget --quiet -O - https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
-echo "deb https://dl.bintray.com/beekeeper-studio/releases disco main" | sudo tee /etc/apt/sources.list.d/beekeeper-studio.list
-sudo apt update
-sudo apt install beekeeper-studio
+# Install DBeaver
+sudo flatpak install -y flathub io.dbeaver.DBeaverCommunity
