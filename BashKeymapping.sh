@@ -5,7 +5,7 @@ cd ~/Downloads
 echo "TAB: menu-complete" | sudo tee -a ~/.inputrc
 
 # Powerline
-sudo apt install -y powerline
+sudo apt install -y powerline powerline-gitstatus
 git clone https://github.com/powerline/fonts.git --depth=1
 
 ./fonts/install.sh

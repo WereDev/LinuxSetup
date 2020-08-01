@@ -1,15 +1,11 @@
 #!/bin/bash
 
-# exFAT support
-sudo apt-get install exfat-fuse exfat-utils
-
 # Gnome Tweaks and Extensions
 sudo apt install -y gnome-tweaks
-sudo apt install -y gnome-shell-extensions
-sudo apt install -y chrome-gnome-shell
 
-chmod +x ./Gnome/GnomeExtensions.sh
-./Gnome/GnomeExtensions.sh
+# Need to figure out which extensions to keep
+# chmod +x ./Gnome/GnomeExtensions.sh
+# ./Gnome/GnomeExtensions.sh
 
 # Gnome Settings
 dconf load / < ./Gnome/gnome-config.bak

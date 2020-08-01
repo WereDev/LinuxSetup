@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # install vscode extensions
-code --install-extension alexcvzz.vscode-sqlite
-code --install-extension CoenraadS.bracket-pair-colorizer
-code --install-extension eamodio.gitlens
-code --install-extension emmanuelbeziat.vscode-great-icons
-code --install-extension esbenp.prettier-vscode
-code --install-extension formulahendry.dotnet-test-explorer
-code --install-extension hangxingliu.vscode-systemd-support
-code --install-extension liviuschera.noctis
-code --install-extension ms-dotnettools.csharp
-code --install-extension ms-vscode.vs-keybindings
-code --install-extension Reptarsrage.vscode-manage-user-secrets
-code --install-extension VisualStudioExptTeam.vscodeintellicode
-code --install-extension william-voyek.vscode-nginx
-code --install-extension yzhang.markdown-all-in-one
+flatpak run com.visualstudio.code --install-extension alexcvzz.vscode-sqlite
+flatpak run com.visualstudio.code --install-extension CoenraadS.bracket-pair-colorizer
+flatpak run com.visualstudio.code --install-extension eamodio.gitlens
+flatpak run com.visualstudio.code --install-extension emmanuelbeziat.vscode-great-icons
+flatpak run com.visualstudio.code --install-extension esbenp.prettier-vscode
+flatpak run com.visualstudio.code --install-extension formulahendry.dotnet-test-explorer
+flatpak run com.visualstudio.code --install-extension hangxingliu.vscode-systemd-support
+flatpak run com.visualstudio.code --install-extension liviuschera.noctis
+flatpak run com.visualstudio.code --install-extension ms-dotnettools.csharp
+flatpak run com.visualstudio.code --install-extension ms-vscode.vs-keybindings
+flatpak run com.visualstudio.code --install-extension Reptarsrage.vscode-manage-user-secrets
+flatpak run com.visualstudio.code --install-extension VisualStudioExptTeam.vscodeintellicode
+flatpak run com.visualstudio.code --install-extension william-voyek.vscode-nginx
+flatpak run com.visualstudio.code --install-extension yzhang.markdown-all-in-one

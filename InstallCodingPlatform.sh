@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Making sure we have all the supporting bits
-sudo apt install -y software-properties-common apt-transport-https wget
+sudo apt install -y software-properties-common apt-transport-https wget flatpak
+flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Install DotNet Core
 UBUNTU_VERSION=$(lsb_release -r -s)
@@ -13,13 +14,11 @@ echo "DOTNET_CLI_TELEMETRY_OPTOUT=1" | sudo tee -a /etc/environment
 rm packages-microsoft-prod.deb
 
 # Install VS Code
-wget -O vscode.deb https://go.microsoft.com/fwlink/?LinkID=760868
-sudo dpkg -i vscode.deb
-rm vscode.deb
-echo fs.inotify.max_user_instances=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-chmod +x ./VSCode/VSCodeExtensions.sh
-./VSCode/VSCodeExtensions.sh
+# sudo flatpak install -y flathub com.visualstudio.code
+#echo fs.inotify.max_user_instances=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+#echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+#chmod +x ./VSCode/VSCodeExtensions.sh
+#./VSCode/VSCodeExtensions.sh
 
 # Install Git
 sudo apt -y install git
