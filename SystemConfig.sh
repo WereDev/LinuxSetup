@@ -3,12 +3,9 @@
 # Gnome Tweaks and Extensions
 sudo apt install -y gnome-tweaks
 
-# Need to figure out which extensions to keep
-# chmod +x ./Gnome/GnomeExtensions.sh
-# ./Gnome/GnomeExtensions.sh
-
 # Gnome Settings
-dconf load / < ./Gnome/gnome-config.bak
+./Gnome/RestoreGnomeConfig.sh
+./Gnome/GnomeExtensions.sh
 
 # Enabling multi-finger gestures
 # Assumes libinput

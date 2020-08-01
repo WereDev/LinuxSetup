@@ -1,0 +1,8 @@
+[org/gnome/shell/extensions/dynamic-panel-transparency]
+enable-opacity=true
+enable-text-color=false
+icon-shadow=false
+icon-shadow-position=(0, 2, 5)
+text-shadow=true
+text-shadow-position=(3, 3, 5)
+unmaximized-opacity=63

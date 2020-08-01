@@ -1,3 +1,7 @@
+[com/system76/hidpi]
+enable=false
+mode='lodpi'
+
 [org/gnome/desktop/wm/keybindings]
 close=['<Alt>F4']
 switch-applications=@as []

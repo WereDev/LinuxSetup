@@ -1,0 +1,17 @@
+[org/gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=false
+background-opacity=0.59999999999999998
+click-action='previews'
+custom-background-color=false
+custom-theme-customize-running-dots=false
+custom-theme-shrink=true
+dash-max-icon-size=48
+dock-position='BOTTOM'
+force-straight-corner=false
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+multi-monitor=true
+running-indicator-dominant-color=true
+running-indicator-style='METRO'
+scroll-action='switch-workspace'
+transparency-mode='DEFAULT'
+unity-backlit-items=false
