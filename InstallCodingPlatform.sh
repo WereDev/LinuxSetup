@@ -14,12 +14,14 @@ echo "DOTNET_CLI_TELEMETRY_OPTOUT=1" | sudo tee -a /etc/environment
 rm packages-microsoft-prod.deb
 
 # Install VS Code
-flatpak install -y flathub com.visualstudio.code
-alias code='flatpak run com.visualstudio.code'
+wget -O vscode.deb https://go.microsoft.com/fwlink/?LinkID=760868
+sudo dpkg -i vscode.deb
+rm vscode.deb
 echo fs.inotify.max_user_instances=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 chmod +x ./VSCode/VSCodeExtensions.sh
 ./VSCode/VSCodeExtensions.sh
+cp ./VSCode/VSCodeSettings.json ~/.config/Code/User/settings.json
 
 # Install Git
 sudo apt -y install git

@@ -7,6 +7,9 @@ sudo apt install -y gnome-tweaks
 ./Gnome/RestoreGnomeConfig.sh
 ./Gnome/GnomeExtensions.sh
 
+# HP Printer drivers
+sudo apt install hplip hplip-gui
+
 # Enabling multi-finger gestures
 # Assumes libinput
 sudo gpasswd -a $USER input
