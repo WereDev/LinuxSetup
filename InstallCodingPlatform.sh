@@ -14,11 +14,12 @@ echo "DOTNET_CLI_TELEMETRY_OPTOUT=1" | sudo tee -a /etc/environment
 rm packages-microsoft-prod.deb
 
 # Install VS Code
-# sudo flatpak install -y flathub com.visualstudio.code
-#echo fs.inotify.max_user_instances=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-#echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-#chmod +x ./VSCode/VSCodeExtensions.sh
-#./VSCode/VSCodeExtensions.sh
+flatpak install -y flathub com.visualstudio.code
+alias code='flatpak run com.visualstudio.code'
+echo fs.inotify.max_user_instances=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+chmod +x ./VSCode/VSCodeExtensions.sh
+./VSCode/VSCodeExtensions.sh
 
 # Install Git
 sudo apt -y install git
@@ -27,4 +28,4 @@ sudo apt -y install git
 wget --quiet -O - https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
 # Install DBeaver
-sudo flatpak install -y flathub io.dbeaver.DBeaverCommunity
+flatpak install -y flathub io.dbeaver.DBeaverCommunity
