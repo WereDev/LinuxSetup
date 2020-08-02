@@ -21,3 +21,6 @@ flatpak install -y flathub com.discordapp.Discord
 
 # Slack
 flatpak install -y flathub com.slack.Slack
+
+# VirtualBox
+sudo apt install -y virtualbox virtualbox-ext-pack
