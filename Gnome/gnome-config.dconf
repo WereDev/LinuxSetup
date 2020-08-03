@@ -12,7 +12,9 @@ switch-windows-backward=['<Shift><Alt>Tab']
 button-layout='appmenu:minimize,maximize,close'
 
 [org/gnome/settings-daemon/plugins/media-keys]
+email=@as []
 home=['<Super>e']
+screensaver=['<Super>l']
 
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=false
