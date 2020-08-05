@@ -28,6 +28,7 @@ sudo apt -y install git
 
 # Install NodeJs
 wget --quiet -O - https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt -y install nodejs
 
 # Install DBeaver
 flatpak install -y flathub io.dbeaver.DBeaverCommunity
