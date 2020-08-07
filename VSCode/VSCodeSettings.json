@@ -11,7 +11,7 @@
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.colorTheme": "Noctis",
+    "workbench.colorTheme": "Noctis Minimus",
     "workbench.iconTheme": "vscode-great-icons",
     "yaml.customTags": [
         "!Equals",
