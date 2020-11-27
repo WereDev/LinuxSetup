@@ -2,14 +2,6 @@
     "editor.suggestSelection": "first",
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "yaml.customTags": [
-        "!Equals",
-        "!GetAtt",
-        "!Not",
-        "!Ref",
-        "!Sub"
-    ],
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
@@ -33,7 +25,7 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "workbench.colorTheme": "Noctis Minimus",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vscode-great-icons",
     "editor.semanticHighlighting.enabled": true,
     "csharp.semanticHighlighting.enabled": true
 }
