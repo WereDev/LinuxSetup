@@ -1,17 +1,12 @@
 #!/bin/bash
 
-# install vscode extensions
-code --install-extension alexcvzz.vscode-sqlite
-code --install-extension CoenraadS.bracket-pair-colorizer
-code --install-extension eamodio.gitlens
-code --install-extension emmanuelbeziat.vscode-great-icons
-code --install-extension esbenp.prettier-vscode
-code --install-extension formulahendry.dotnet-test-explorer
-code --install-extension hangxingliu.vscode-systemd-support
-code --install-extension liviuschera.noctis
-code --install-extension ms-dotnettools.csharp
-code --install-extension ms-vscode.vs-keybindings
-code --install-extension Reptarsrage.vscode-manage-user-secrets
-code --install-extension VisualStudioExptTeam.vscodeintellicode
-code --install-extension william-voyek.vscode-nginx
-code --install-extension yzhang.markdown-all-in-one
+# install vscodium extensions
+codium --install-extension alexcvzz.vscode-sqlite
+codium --install-extension CoenraadS.bracket-pair-colorizer
+codium --install-extension eamodio.gitlens
+codium --install-extension emmanuelbeziat.vscode-great-icons
+codium --install-extension formulahendry.dotnet-test-explorer
+codium --install-extension liviuschera.noctis
+codium --install-extension ms-dotnettools.csharp
+codium --install-extension ms-vscode.vs-keybindings
+codium --install-extension Reptarsrage.vscode-manage-user-secrets
