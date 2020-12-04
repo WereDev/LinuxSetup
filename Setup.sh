@@ -1,4 +1,5 @@
-./BashKeymapping.sh
+./ConfigureBash.sh
+./ConfigureGnome.sh
 ./InstallCodingPlatform.sh
 ./InstallOtherSoftware.sh
-./SystemConfig.sh
+./InstallPrinterDrivers.sh

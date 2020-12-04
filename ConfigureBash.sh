@@ -17,3 +17,11 @@ if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
   POWERLINE_BASH_SELECT=1
   source /usr/share/powerline/bindings/bash/powerline.sh
 fi" >> ~/.bashrc
+
+# Make sure Aliases are supported
+sudo echo "
+# Aliases
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
+" >> ~/.bashrc

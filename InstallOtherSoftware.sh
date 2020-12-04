@@ -21,6 +21,9 @@ flatpak install -y flathub com.discordapp.Discord
 
 # Slack
 flatpak install -y flathub com.slack.Slack
+sudo echo "
+alias sublime='flatpak run com.sublimetext.three'
+" >> ~/.bash_aliases
 
 # VirtualBox
 sudo apt install -y virtualbox virtualbox-ext-pack
