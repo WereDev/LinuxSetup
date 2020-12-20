@@ -1,0 +1,22 @@
+# See usb devices
+grep . /sys/bus/usb/devices/*/product
+
+# See what usb devices can wake the system
+grep . /sys/bus/usb/devices/*/power/wakeup
+
+
+# Set wake ability for some stuff
+```
+    #!/bin/sh -e
+
+    # USB Receive, aka Logitech Keyboard
+    echo enabled > /sys/bus/usb/devices/1-5.2.1/power/wakeup
+
+    # Gaming Mouse G502, Logitech
+    echo enabled > /sys/bus/usb/devices/1-5.2.2/power/wakeup
+
+    # Microsoft Nano Transeiver, aka Sculpt Keyboard
+    echo enabled > /sys/bus/usb/devices/1-5.2.3/power/wakeup
+
+    exit 0
+```

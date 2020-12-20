@@ -1,0 +1,7 @@
+# Restart Pulse Audio
+pulseaudio -k; pulseaudio --start
+# OR
+systemctl --user restart pulseaudio
+
+# Scan Pulse Devices
+pulseaudio -k && pactl load-module module-detect
