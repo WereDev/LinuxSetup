@@ -10,7 +10,7 @@ cat <<EOS >/lib/systemd/system-sleep/mysuspendresume
 
 if [ "${1}" == "pre" ]; then
   # Do the thing you want before suspend here, e.g.:
-  
+  :
 elif [ "${1}" == "post" ]; then
   # Do the thing you want after resume here, e.g.:
   $wakeScript
