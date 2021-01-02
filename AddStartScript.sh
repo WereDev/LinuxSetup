@@ -10,18 +10,19 @@ cat <<EOS >/etc/init.d/mystartup
 # chkconfig: 2345 20 80
 
 start() {
-    # code to start app comes here 
+    # code to start app comes here
     # example: daemon program_name &
 
     $wakeScript
 }
 
 stop() {
-    # code to stop app comes here 
+    # code to stop app comes here
     # example: killproc program_name
+    :
 }
 
-case "$1" in 
+case "$1" in
     start)
        start
        ;;
@@ -40,8 +41,7 @@ case "$1" in
        echo "Usage: $0 {start|stop|status|restart}"
 esac
 
-exit 0 
-
+exit 0
 EOS
 
 chmod +x /etc/init.d/mystartup
