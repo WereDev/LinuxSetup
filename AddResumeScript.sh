@@ -8,10 +8,10 @@ wakeScript="$scriptsFolder/SetUsbWakeStates.sh"
 cat <<EOS >/lib/systemd/system-sleep/mysuspendresume
 #!/bin/bash
 
-if [ "${1}" == "pre" ]; then
+if [ "\${1}" == "pre" ]; then
   # Do the thing you want before suspend here, e.g.:
   :
-elif [ "${1}" == "post" ]; then
+elif [ "\${1}" == "post" ]; then
   # Do the thing you want after resume here, e.g.:
   $wakeScript
 fi
